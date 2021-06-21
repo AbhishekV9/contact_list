@@ -1,0 +1,85 @@
+<html>
+
+  <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <!-- /* our css code should be below all other styles so we can
+        over ride it*/ -->
+        <link rel="stylesheet" href="/css/home.css">
+  </head>
+
+  <body>
+
+    <h1 id="page-heading">
+      <i class='fas fa-address-book'></i>
+      My Contacts List
+    </h1>
+
+    <!-- <div>
+      <ul>
+        <%for(let i of contact_list){%>
+          <li>
+            <p>
+              <%= i.Name %>
+            </p>
+            <p>
+              <%= i.Phone%>
+            </p>
+          </li>
+          
+          
+        <%}%>
+      </ul>
+
+    </div> -->
+
+    <div id="contacts-list-container">
+      <ul>
+        <% for (let i of contact_list) { %> 
+          
+          <li class="contact">
+            <div class="details">
+              <p> <%= i.name %> </p>
+              <p><%= i.phone %> </p>
+            </div>
+
+            <div class="delete-button">
+              <!-- <a href="/delete-contact/<%= i.phone %>">  using string para here --> 
+              <a href="/delete-contact/?id=<%= i._id %>">
+                <i class ="fas fa-window-close "></i>
+
+              </a>
+            </div>
+
+          </li>
+          
+          
+        <% } %>
+
+
+      </ul>
+
+    </div> 
+
+    
+
+
+    <form id="new-contact-form" action="/create-contact" method="POST"> 
+      <!-- // in action we are sending our form to create-contact route wich is handeled in our server// -->
+      <input type="text" name="name" placeholder="Enter Name" required>
+      <input type="number" name="phone" placeholder="Enter No." required>
+      <button type="submit">
+        Add 
+      </button>
+    </form>
+
+    <script type='text/javascript' src='/js/home.js'></script>
+    
+  </body>
+
+
+
+
+</html>
