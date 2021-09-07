@@ -1,7 +1,7 @@
 ﻿# contact_list
  
  ### Description: ######
-Built a web application which provides users the functionality to add, delete contacts and maintain permanent contact lists.
+A web application which provides users the functionality to add, delete contacts and maintain permanent contact lists.
 
 ### Screenshot: ######
 
