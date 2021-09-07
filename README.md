@@ -23,9 +23,9 @@ Built a web application which provides users the functionality to add, delete co
 
 ### Modules Used: ######
 
- "ejs": "^3.1.6",
- "express": "^4.17.1",
- "mongoose": "^5.12.13",
+ "ejs": "^3.1.6",</br>
+ "express": "^4.17.1", </br>
+ "mongoose": "^5.12.13", </br>
  "nodemon": "^2.0.12"
  
  ### How to Install : ######
