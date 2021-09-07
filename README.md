@@ -3,7 +3,7 @@
  ### Description: ######
 Built a web application which provides users the functionality to add, delete contacts and maintain permanent contact lists.
 
-### Screenshots: ######
+### Screenshot: ######
 
 
 ![Untitled](https://user-images.githubusercontent.com/85125126/132387189-8583d8a5-4479-462d-b147-c4cf7e360bf2.jpg)
